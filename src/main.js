@@ -29,7 +29,15 @@ class WeatherApp {
             this.fadeInOut();
             let query = this.viewElems.searchInput.value;
             getWeatherByCity(query).then(data => {
+                console.log(data)
                 this.displayWeatherData(data);
+                this.viewElems.searchInput.style.borderColor = 'black';
+                this.viewElems.errorMessage.innerText = "";
+                this.viewElems.searchInput.value = "";
+            }).catch(() => {
+                this.viewElems.searchInput.style.borderColor = 'red';
+                this.viewElems.errorMessage.innerText = "There are no results for your query, check your spelling";
+                this.fadeInOut();
             });
         }
     }
