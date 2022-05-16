@@ -65,6 +65,10 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  .weather-icon {
+    max-width: 50%;
+  }
   
   .weather-info__btn-return {
     padding: 5px 25px;
