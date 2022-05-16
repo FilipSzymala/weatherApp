@@ -7,6 +7,11 @@ body {
     font-size: 300%;
   }
   
+  .error-message {
+    color: red;
+    font-family: 'Consolas', monospace;
+  }
+
   main {
     display: flex;
     align-items: center;
@@ -74,3 +79,4 @@ body {
     padding: 5px 25px;
     border: 2px solid black;
   }
+  
